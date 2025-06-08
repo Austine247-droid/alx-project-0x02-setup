@@ -24,6 +24,11 @@ const Header = () => {
                         Posts
                     </Link>
                 </li>
+                <li>
+                    <Link href="/users" className="text-blue-600 hover:underline hover:text-red-400">
+                        User
+                    </Link>
+                </li>
           
             </ul>
         </nav>
