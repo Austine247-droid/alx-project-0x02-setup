@@ -1,10 +1,29 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
   return (
-    <div>
+    <header className='flex items-center justify-between p-4 bg-gray-100 shadow-md'>
+        <Link href="/" className="text-2xl font-bold text-blue-600">
+          Austine
+        </Link>
+        <nav className="flex space-x-4">
+            <ul >
+                <li>
+                    <Link href="/home" className="text-blue-600 hover:underline hover:text-red-400">
+                        Home
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/about" className="text-blue-600 hover:underline hover:text-red-400">
+                        About
+                    </Link>
+                </li>
+          
+            </ul>
+        </nav>
       
-    </div>
+    </header>
   )
 }
 
