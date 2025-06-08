@@ -1,13 +1,16 @@
-import Header from '@/components/layout/Header'
-import React from 'react'
+import Head from 'next/head';
+import Header from '../components/layout/Header';
 
-const index = () => {
+export default function Home() {
   return (
-    <div className='flex items-center justify-center h-screen bg-gray-100 text-2xl font-bold text-blue-600'>
-  <Header/>
-  
-    </div>
-  )
+    <>
+      <Head>
+        <title>Welcome to ALX Project</title>
+      </Head>
+      <Header />
+      <main className="flex items-center justify-center min-h-screen bg-gray-100">
+        <h1 className="text-4xl font-bold text-blue-600">Welcome to ALX Project with Next.js!</h1>
+      </main>
+    </>
+  );
 }
-
-export default index
